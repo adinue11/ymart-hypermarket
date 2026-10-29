@@ -1,0 +1,77 @@
+.ymart-floating-search {
+  position: fixed;
+  right: 24px;
+  bottom: 112px; /* Keep it above the floating offers button */
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 48px;
+  max-width: calc(100vw - 32px);
+  padding: 12px 17px;
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: #171717;
+  color: #fff;
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ymart-search-animated-text {
+  animation: ymart-search-text-in 0.45s ease both;
+  white-space: nowrap;
+}
+
+.ymart-floating-search-icon {
+  font-size: 23px;
+  line-height: 1;
+}
+
+.ymart-floating-search-arrow {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.ymart-floating-search:hover .ymart-floating-search-arrow {
+  transform: translateX(4px);
+}
+
+@keyframes ymart-search-text-in {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .ymart-floating-search {
+    right: 14px;
+    bottom: 100px;
+    min-height: 44px;
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ymart-search-animated-text {
+    animation: none;
+  }
+
+  .ymart-floating-search-arrow {
+    transition: none;
+  }
+}

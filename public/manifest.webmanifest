@@ -1,0 +1,13 @@
+{
+  "name": "YMART — Beyond the Everyday",
+  "short_name": "YMART",
+  "description": "Discover four YMART hypermarket destinations.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0d0c",
+  "theme_color": "#0b0d0c",
+  "icons": [
+    { "src": "/ymart-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
